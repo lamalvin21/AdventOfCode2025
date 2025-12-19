@@ -1,0 +1,9 @@
+# Ignore macOS debug symbol directories and stray binaries in src
+/src/*.dSYM/
+/src/main
+
+# VS Code workspace settings
+/.vscode/
+
+# Build directory
+/build/
