@@ -1,7 +1,12 @@
 #pragma once
 
-int processL(int currentPosition, int moveAmount);
+#include <utility>
 
-int processR(int currentPosition, int moveAmount);
+std::pair<int,int> processL(int currentPosition, int moveAmount);
+
+std::pair<int,int> processR(int currentPosition, int moveAmount);
 
 int dayOne();
+
+int dayOnePart1();
+int dayOnePart2();
