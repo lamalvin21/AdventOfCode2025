@@ -11,5 +11,5 @@ else
   exit 2
 fi
 
-${COMPILER} -std=c++17 -g src/main.cpp src/impl/dayOne.cpp -o build/advent
+${COMPILER} -std=c++17 -g src/main.cpp src/dayOne/dayOne.cpp -o build/advent
 ./build/advent

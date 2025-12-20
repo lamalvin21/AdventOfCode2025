@@ -6,7 +6,7 @@
 #include <fstream>
 #include <sstream>
 
-inline std::vector<std::pair<char,int>> parseDayOneInput(const std::string& path = "src/impl/dayOneInput.txt") {
+inline std::vector<std::pair<char,int>> parseDayOneInput(const std::string& path = "src/dayOne/dayOneInput.txt") {
     std::vector<std::pair<char,int>> out;
     std::ifstream ifs(path);
     if (!ifs) return out;

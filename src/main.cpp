@@ -1,5 +1,5 @@
 #include <iostream>
-#include "impl/dayOne.h"
+#include "dayOne/dayOne.h"
 
 // ./run.sh
 

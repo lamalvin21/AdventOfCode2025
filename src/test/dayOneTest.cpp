@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../impl/dayOne.h"
+#include "../dayOne/dayOne.h"
 
 // ./run_tests.sh
 
