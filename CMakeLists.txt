@@ -4,7 +4,10 @@ project(AdventOfCode2025 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(advent src/main.cpp src/dayOne/dayOne.cpp)
+# Export compile commands for VS Code/clangd/IntelliSense
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_executable(advent src/main.cpp src/dayOne/dayOne.cpp src/dayTwo/dayTwo.cpp)
 
 # Tests
 include(FetchContent)
@@ -20,3 +23,7 @@ enable_testing()
 add_executable(dayOneTest src/test/dayOneTest.cpp src/dayOne/dayOne.cpp)
 target_link_libraries(dayOneTest gtest_main)
 add_test(NAME dayOneTest COMMAND dayOneTest)
+
+add_executable(dayTwoTest src/test/dayTwoTest.cpp src/dayTwo/dayTwo.cpp)
+target_link_libraries(dayTwoTest gtest_main)
+add_test(NAME dayTwoTest COMMAND dayTwoTest)
