@@ -4,6 +4,7 @@
 // ./run.sh
 
 int main() {
-    std::cout << "Hello, AdventOfCode2025!" << std::endl;
+    int result = dayOne();
+    std::cout << "dayOne result: " << result << std::endl;
     return 0;
 }
